@@ -1,0 +1,16 @@
+{
+    "name": "PyTorch & TensorFlow",
+    "dockerFile": "Dockerfile",
+    "service": "intro-to-deeplearning",
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.vscode-ai",
+        "ms-vscode-remote.remote-containers"
+    ],
+    "postCreateCommand": "pip install --user -e /workspaces/introtodeeplearning",
+    "remoteUser": "vscode",
+}
